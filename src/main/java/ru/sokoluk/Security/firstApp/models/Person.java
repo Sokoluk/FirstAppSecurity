@@ -6,6 +6,7 @@ import javax.validation.constraints.Size;
 
 
 @Entity
+@Table(name = "Person")
 public class Person {
 
     @Id
@@ -26,9 +27,8 @@ public class Person {
 
     }
 
-    public Person(String username, String password) {
+    public Person(String username) {
         this.username = username;
-        this.password = password;
     }
 
     public int getId() {
